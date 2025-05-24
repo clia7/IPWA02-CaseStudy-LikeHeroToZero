@@ -14,18 +14,18 @@
                     <h3 class="text-center mb-4">Login</h3>
 
                     <div class="mb-3">
-                        <label for="username" class="form-label">Benutzername</label>
+                        <label for="username" class="form-label">Username</label>
                         <h:inputText id="username" value="#{loginBean.username}" required="true"
                                      styleClass="form-control" />
                     </div>
 
                     <div class="mb-3">
-                        <label for="password" class="form-label">Passwort</label>
+                        <label for="password" class="form-label">Password</label>
                         <h:inputSecret id="password" value="#{loginBean.password}" required="true"
                                        styleClass="form-control" />
                     </div>
 
-                    <h:commandButton value="Anmelden"
+                    <h:commandButton value="Login"
                                      action="#{loginBean.login}"
                                      styleClass="btn btn-primary w-100 mb-3" />
 

@@ -34,6 +34,31 @@ public class EmissionDAO {
         }
     }
 
+    public List<Emission> findLatestByCountry(String country) {
+        EntityManager em = emf.createEntityManager();
+        try {
+            // Ermittle das maximale Jahr für das gewählte Land
+            Integer latestYear = em.createQuery(
+                    "SELECT MAX(e.year) FROM Emission e WHERE e.country = :country", Integer.class)
+                    .setParameter("country", country)
+                    .getSingleResult();
+
+            if (latestYear == null) {
+                return List.of(); // keine Daten vorhanden
+            }
+
+            // Hole alle Einträge mit diesem Jahr
+            return em.createQuery(
+                    "SELECT e FROM Emission e WHERE e.country = :country AND e.year = :year", Emission.class)
+                    .setParameter("country", country)
+                    .setParameter("year", latestYear)
+                    .getResultList();
+
+        } finally {
+            em.close();
+        }
+    }
+
     public List<Emission> findAll() {
         EntityManager em = emf.createEntityManager();
         try {
@@ -75,4 +100,16 @@ public class EmissionDAO {
             em.close();
         }
     }
+
+    public List<String> findAllCountries() {
+    EntityManager em = emf.createEntityManager();
+    try {
+        return em.createQuery("SELECT DISTINCT e.country FROM Emission e ORDER BY e.country", String.class)
+                 .getResultList();
+    } finally {
+        em.close();
+    }
+}
+
+
 }

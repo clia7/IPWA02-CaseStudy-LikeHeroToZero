@@ -12,8 +12,8 @@
     <div class="container mt-5">
         <div class="card shadow-sm">
             <div class="card-body">
-                <h2 class="card-title">Willkommen, #{loginBean.username}!</h2>
-                <p class="card-text">Schön, dass du wieder da bist.</p>
+                <h2 class="card-title">Welcome, #{loginBean.username}!</h2>
+                <p class="card-text">Nice to have you back.</p>
 
                 <h:messages globalOnly="true" layout="list" style="color: red; margin-bottom: 1rem;" />
 
@@ -22,31 +22,31 @@
                 </h:form>
 
                 <h:form id="emissionForm" styleClass="mt-5">
-                    <h3>Neue Emission hinzufügen</h3>
+                    <h3>Add New Emission Entry</h3>
 
                     <div class="form-group mb-3">
-                        <label for="country">Land:</label>
+                        <label for="country">Country:</label>
                         <h:inputText id="country" value="#{emissionBean.emission.country}" required="true"
                             styleClass="form-control" />
                         <h:message for="country" style="color: red;" />
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="company">Unternehmen:</label>
+                        <label for="company">Company:</label>
                         <h:inputText id="company" value="#{emissionBean.emission.company}" required="true"
                             styleClass="form-control" />
                         <h:message for="company" style="color: red;" />
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="sector">Sektor:</label>
+                        <label for="sector">Sector:</label>
                         <h:inputText id="sector" value="#{emissionBean.emission.sector}" required="true"
                             styleClass="form-control" />
                         <h:message for="sector" style="color: red;" />
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="year">Jahr:</label>
+                        <label for="year">Year:</label>
                         <h:inputText id="year" value="#{emissionBean.emission.year}" required="true"
                             styleClass="form-control">
                             <f:validateLongRange minimum="1900" maximum="2100" />
@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="co2">CO₂-Ausstoß (in Tonnen):</label>
+                        <label for="co2">CO<sub>2</sub>-Emission (in Mt):</label>
                         <h:inputText id="co2" value="#{emissionBean.emission.emissionsMt}" required="true"
                             styleClass="form-control">
                             <f:validateDoubleRange minimum="0.0" />
@@ -63,38 +63,38 @@
                         <h:message for="co2" style="color: red;" />
                     </div>
 
-                    <h:commandButton value="Speichern" action="#{emissionBean.save}" styleClass="btn btn-primary" />
+                    <h:commandButton value="Save" action="#{emissionBean.save}" styleClass="btn btn-primary" />
                 </h:form>
 
-                <h3 class="mt-5">Gespeicherte Emissionen</h3>
+                <h3 class="mt-5">Saved Emissions</h3>
 
                 <h:form>
                     <h:dataTable value="#{emissionBean.allEmissions}" var="e" styleClass="table table-striped mt-3">
                         <h:column>
-                            <f:facet name="header">Land</f:facet>
+                            <f:facet name="header">Country</f:facet>
                             #{e.country}
                         </h:column>
                         <h:column>
-                            <f:facet name="header">Firma</f:facet>
+                            <f:facet name="header">Company</f:facet>
                             #{e.company}
                         </h:column>
                         <h:column>
-                            <f:facet name="header">Sektor</f:facet>
+                            <f:facet name="header">Sector</f:facet>
                             #{e.sector}
                         </h:column>
                         <h:column>
-                            <f:facet name="header">Jahr</f:facet>
+                            <f:facet name="header">Year</f:facet>
                             #{e.year}
                         </h:column>
                         <h:column>
-                            <f:facet name="header">CO₂</f:facet>
+                            <f:facet name="header">C0<sub>2</sub>-Emission</f:facet>
                             #{e.emissionsMt}
                         </h:column>
                         <h:column>
-                            <f:facet name="header">Aktion</f:facet>
-                            <h:commandButton value="Löschen" action="#{emissionBean.delete(e.id)}"
+                            <f:facet name="header">Action</f:facet>
+                            <h:commandButton value="Delete" action="#{emissionBean.delete(e.id)}"
                                 styleClass="btn btn-danger btn-sm"
-                                onclick="return confirm('Eintrag wirklich löschen?');" />
+                                onclick="return confirm('Are you sure you want to delete this entry?');" />
                         </h:column>
                     </h:dataTable>
                 </h:form>
