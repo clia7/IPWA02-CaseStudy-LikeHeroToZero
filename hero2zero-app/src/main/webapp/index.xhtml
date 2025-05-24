@@ -275,7 +275,7 @@
 
 
 
-             <section id="dataOverview"> 
+        <section id="dataOverview">
             <div class="dataOverview_content m-5">
                 <h2>Data Overview</h2>
                 <p>
@@ -295,9 +295,11 @@
                     sectors between 2021 and 2023.
                 </p>
 
-                <!--
-                <input type="text" class="form-control mb-3" id="filterInput" onkeyup=filterfunction()
-                    placeholder="Search by country or company...">
+
+                <h:form id="filterForm">
+                    <h:inputText id="filterInput" styleClass="form-control mb-3" onkeyup="filterFunction()"
+                        placeholder="Search by country or company..." />
+                    <!--
                 <div class="table-responsive-md">
                     <table id="emissionTable" class="table table-striped table-hover">
                         <thead>
@@ -312,9 +314,10 @@
                         <tbody id="tableData"></tbody>
                     </table>
                 </div>   -->
+                </h:form>
             </div>
         </section>
- 
+
 
         <section id="collectingData" class="py-5 bg-light"> <!--COLLECTION DATA SECTION-->
             <div class="container">
