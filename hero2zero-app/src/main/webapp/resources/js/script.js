@@ -100,6 +100,8 @@ function sortFunction(columnIndex) {
   rows.forEach(row => tbody.appendChild(row));
 }
 
+
+
 //FORM VALIDATIOM FOR MAIL
 const regMail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -181,3 +183,5 @@ function escapeHTML(input) {
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
 }
+
+
