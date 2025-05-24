@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</h:head>
+
+<h:body style="background-color: #f8f9fa;">
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title">Willkommen, #{loginBean.username}!</h2>
+                <p class="card-text">Schön, dass du wieder da bist.</p>
+
+                <h:messages globalOnly="true" layout="list" style="color: red; margin-bottom: 1rem;" />
+
+                <h:form>
+                    <h:commandButton value="Logout" action="#{loginBean.logout}" styleClass="btn btn-danger" />
+                </h:form>
+
+                <h:form id="emissionForm" styleClass="mt-5">
+                    <h3>Neue Emission hinzufügen</h3>
+
+                    <div class="form-group mb-3">
+                        <label for="country">Land:</label>
+                        <h:inputText id="country" value="#{emissionBean.emission.country}" required="true"
+                            styleClass="form-control" />
+                        <h:message for="country" style="color: red;" />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="company">Unternehmen:</label>
+                        <h:inputText id="company" value="#{emissionBean.emission.company}" required="true"
+                            styleClass="form-control" />
+                        <h:message for="company" style="color: red;" />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="sector">Sektor:</label>
+                        <h:inputText id="sector" value="#{emissionBean.emission.sector}" required="true"
+                            styleClass="form-control" />
+                        <h:message for="sector" style="color: red;" />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="year">Jahr:</label>
+                        <h:inputText id="year" value="#{emissionBean.emission.year}" required="true"
+                            styleClass="form-control">
+                            <f:validateLongRange minimum="1900" maximum="2100" />
+                        </h:inputText>
+                        <h:message for="year" style="color: red;" />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="co2">CO₂-Ausstoß (in Tonnen):</label>
+                        <h:inputText id="co2" value="#{emissionBean.emission.emissionsMt}" required="true"
+                            styleClass="form-control">
+                            <f:validateDoubleRange minimum="0.0" />
+                        </h:inputText>
+                        <h:message for="co2" style="color: red;" />
+                    </div>
+
+                    <h:commandButton value="Speichern" action="#{emissionBean.save}" styleClass="btn btn-primary" />
+                </h:form>
+
+                <h3 class="mt-5">Gespeicherte Emissionen</h3>
+
+                <h:form>
+                    <h:dataTable value="#{emissionBean.allEmissions}" var="e" styleClass="table table-striped mt-3">
+                        <h:column>
+                            <f:facet name="header">Land</f:facet>
+                            #{e.country}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Firma</f:facet>
+                            #{e.company}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Sektor</f:facet>
+                            #{e.sector}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Jahr</f:facet>
+                            #{e.year}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">CO₂</f:facet>
+                            #{e.emissionsMt}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Aktion</f:facet>
+                            <h:commandButton value="Löschen" action="#{emissionBean.delete(e.id)}"
+                                styleClass="btn btn-danger btn-sm"
+                                onclick="return confirm('Eintrag wirklich löschen?');" />
+                        </h:column>
+                    </h:dataTable>
+                </h:form>
+            </div>
+        </div>
+    </div>
+</h:body>
+</html>

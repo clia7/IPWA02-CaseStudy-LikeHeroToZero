@@ -1,0 +1,702 @@
+[
+  {
+    "country": "Brazil",
+    "company": "SkyReach",
+    "sector": "Finance",
+    "emissions_mt": 60.85,
+    "year": 2021
+  },
+  {
+    "country": "Canada",
+    "company": "UrbanMove",
+    "sector": "Aerospace",
+    "emissions_mt": 31.34,
+    "year": 2023
+  },
+  {
+    "country": "Germany",
+    "company": "AutoTech AG",
+    "sector": "Transport",
+    "emissions_mt": 96.29,
+    "year": 2021
+  },
+  {
+    "country": "Canada",
+    "company": "SteelDragon Ltd.",
+    "sector": "Transport",
+    "emissions_mt": 79.61,
+    "year": 2023
+  },
+  {
+    "country": "Australia",
+    "company": "ByteEnergy",
+    "sector": "Automotive",
+    "emissions_mt": 61.24,
+    "year": 2022
+  },
+  {
+    "country": "India",
+    "company": "GreenPower Inc.",
+    "sector": "Technology",
+    "emissions_mt": 95.77,
+    "year": 2023
+  },
+  {
+    "country": "China",
+    "company": "VoltTech",
+    "sector": "Pharmaceuticals",
+    "emissions_mt": 61.54,
+    "year": 2021
+  },
+  {
+    "country": "Japan",
+    "company": "AutoTech AG",
+    "sector": "Automotive",
+    "emissions_mt": 90.74,
+    "year": 2022
+  },
+  {
+    "country": "Canada",
+    "company": "ByteEnergy",
+    "sector": "Automotive",
+    "emissions_mt": 77.56,
+    "year": 2022
+  },
+  {
+    "country": "UK",
+    "company": "VoltTech",
+    "sector": "Transport",
+    "emissions_mt": 27.83,
+    "year": 2023
+  },
+  {
+    "country": "USA",
+    "company": "CyberDyn",
+    "sector": "Automotive",
+    "emissions_mt": 59.51,
+    "year": 2023
+  },
+  {
+    "country": "USA",
+    "company": "QuantumSteel",
+    "sector": "Aerospace",
+    "emissions_mt": 92.21,
+    "year": 2021
+  },
+  {
+    "country": "India",
+    "company": "EcoGrow",
+    "sector": "Textiles",
+    "emissions_mt": 28.79,
+    "year": 2021
+  },
+  {
+    "country": "Australia",
+    "company": "HydroWave",
+    "sector": "Pharmaceuticals",
+    "emissions_mt": 93.58,
+    "year": 2021
+  },
+  {
+    "country": "Australia",
+    "company": "QuantumSteel",
+    "sector": "Aerospace",
+    "emissions_mt": 99.87,
+    "year": 2023
+  },
+  {
+    "country": "India",
+    "company": "GreenPower Inc.",
+    "sector": "Aerospace",
+    "emissions_mt": 77.67,
+    "year": 2021
+  },
+  {
+    "country": "Australia",
+    "company": "ByteEnergy",
+    "sector": "Technology",
+    "emissions_mt": 56.26,
+    "year": 2021
+  },
+  {
+    "country": "India",
+    "company": "ByteEnergy",
+    "sector": "Technology",
+    "emissions_mt": 96.73,
+    "year": 2023
+  },
+  {
+    "country": "Canada",
+    "company": "SkyReach",
+    "sector": "Technology",
+    "emissions_mt": 55.36,
+    "year": 2022
+  },
+  {
+    "country": "UK",
+    "company": "Solaris Systems",
+    "sector": "Finance",
+    "emissions_mt": 78.5,
+    "year": 2021
+  },
+  {
+    "country": "USA",
+    "company": "Solaris Systems",
+    "sector": "Steel Production",
+    "emissions_mt": 46.91,
+    "year": 2021
+  },
+  {
+    "country": "France",
+    "company": "AutoTech AG",
+    "sector": "Transport",
+    "emissions_mt": 29.62,
+    "year": 2022
+  },
+  {
+    "country": "Japan",
+    "company": "Solaris Systems",
+    "sector": "Automotive",
+    "emissions_mt": 69.34,
+    "year": 2022
+  },
+  {
+    "country": "Japan",
+    "company": "AirFuture SA",
+    "sector": "Energy",
+    "emissions_mt": 99.99,
+    "year": 2022
+  },
+  {
+    "country": "Canada",
+    "company": "Solaris Systems",
+    "sector": "Automotive",
+    "emissions_mt": 90.92,
+    "year": 2022
+  },
+  {
+    "country": "India",
+    "company": "VoltTech",
+    "sector": "Energy",
+    "emissions_mt": 58.83,
+    "year": 2021
+  },
+  {
+    "country": "UK",
+    "company": "VoltTech",
+    "sector": "Textiles",
+    "emissions_mt": 23.98,
+    "year": 2021
+  },
+  {
+    "country": "China",
+    "company": "QuantumSteel",
+    "sector": "Energy",
+    "emissions_mt": 17.53,
+    "year": 2022
+  },
+  {
+    "country": "France",
+    "company": "QuantumSteel",
+    "sector": "Steel Production",
+    "emissions_mt": 96.73,
+    "year": 2022
+  },
+  {
+    "country": "UK",
+    "company": "EnviroFinance",
+    "sector": "Automotive",
+    "emissions_mt": 68.17,
+    "year": 2023
+  },
+  {
+    "country": "Germany",
+    "company": "GreenPower Inc.",
+    "sector": "Pharmaceuticals",
+    "emissions_mt": 24.82,
+    "year": 2023
+  },
+  {
+    "country": "Japan",
+    "company": "SkyReach",
+    "sector": "Aerospace",
+    "emissions_mt": 23.77,
+    "year": 2021
+  },
+  {
+    "country": "Germany",
+    "company": "NeuroPharm",
+    "sector": "Transport",
+    "emissions_mt": 75.62,
+    "year": 2023
+  },
+  {
+    "country": "Germany",
+    "company": "AutoTech AG",
+    "sector": "Technology",
+    "emissions_mt": 11.29,
+    "year": 2023
+  },
+  {
+    "country": "Australia",
+    "company": "EcoGrow",
+    "sector": "Textiles",
+    "emissions_mt": 34.48,
+    "year": 2023
+  },
+  {
+    "country": "UK",
+    "company": "FutureFuel",
+    "sector": "Transport",
+    "emissions_mt": 38.23,
+    "year": 2023
+  },
+  {
+    "country": "UK",
+    "company": "NeuroPharm",
+    "sector": "Textiles",
+    "emissions_mt": 48.64,
+    "year": 2023
+  },
+  {
+    "country": "France",
+    "company": "SteelDragon Ltd.",
+    "sector": "Energy",
+    "emissions_mt": 10.86,
+    "year": 2021
+  },
+  {
+    "country": "UK",
+    "company": "FutureFuel",
+    "sector": "Energy",
+    "emissions_mt": 40.43,
+    "year": 2023
+  },
+  {
+    "country": "India",
+    "company": "TexGlobal",
+    "sector": "Automotive",
+    "emissions_mt": 85.16,
+    "year": 2023
+  },
+  {
+    "country": "USA",
+    "company": "EcoCorp",
+    "sector": "Agriculture",
+    "emissions_mt": 83.99,
+    "year": 2023
+  },
+  {
+    "country": "China",
+    "company": "TexGlobal",
+    "sector": "Pharmaceuticals",
+    "emissions_mt": 58.26,
+    "year": 2022
+  },
+  {
+    "country": "India",
+    "company": "AirFuture SA",
+    "sector": "Steel Production",
+    "emissions_mt": 89.7,
+    "year": 2022
+  },
+  {
+    "country": "Germany",
+    "company": "TexGlobal",
+    "sector": "Transport",
+    "emissions_mt": 66.18,
+    "year": 2023
+  },
+  {
+    "country": "Brazil",
+    "company": "PureAir Ltd.",
+    "sector": "Energy",
+    "emissions_mt": 66.75,
+    "year": 2023
+  },
+  {
+    "country": "USA",
+    "company": "NeuroPharm",
+    "sector": "Pharmaceuticals",
+    "emissions_mt": 88.17,
+    "year": 2022
+  },
+  {
+    "country": "France",
+    "company": "SkyReach",
+    "sector": "Automotive",
+    "emissions_mt": 36.55,
+    "year": 2022
+  },
+  {
+    "country": "France",
+    "company": "VoltTech",
+    "sector": "Agriculture",
+    "emissions_mt": 25.85,
+    "year": 2022
+  },
+  {
+    "country": "India",
+    "company": "CyberDyn",
+    "sector": "Textiles",
+    "emissions_mt": 42.26,
+    "year": 2021
+  },
+  {
+    "country": "China",
+    "company": "UrbanMove",
+    "sector": "Technology",
+    "emissions_mt": 30.39,
+    "year": 2022
+  },
+  {
+    "country": "India",
+    "company": "SkyReach",
+    "sector": "Steel Production",
+    "emissions_mt": 45.56,
+    "year": 2021
+  },
+  {
+    "country": "France",
+    "company": "QuantumSteel",
+    "sector": "Finance",
+    "emissions_mt": 87.71,
+    "year": 2022
+  },
+  {
+    "country": "Germany",
+    "company": "FutureFuel",
+    "sector": "Technology",
+    "emissions_mt": 17.31,
+    "year": 2021
+  },
+  {
+    "country": "Canada",
+    "company": "AgroNova",
+    "sector": "Transport",
+    "emissions_mt": 50.29,
+    "year": 2021
+  },
+  {
+    "country": "Canada",
+    "company": "Solaris Systems",
+    "sector": "Textiles",
+    "emissions_mt": 85.78,
+    "year": 2023
+  },
+  {
+    "country": "USA",
+    "company": "AgroNova",
+    "sector": "Energy",
+    "emissions_mt": 29.06,
+    "year": 2022
+  },
+  {
+    "country": "USA",
+    "company": "UrbanMove",
+    "sector": "Steel Production",
+    "emissions_mt": 20.89,
+    "year": 2022
+  },
+  {
+    "country": "UK",
+    "company": "EcoCorp",
+    "sector": "Energy",
+    "emissions_mt": 85.2,
+    "year": 2022
+  },
+  {
+    "country": "Canada",
+    "company": "AgroNova",
+    "sector": "Textiles",
+    "emissions_mt": 94.43,
+    "year": 2022
+  },
+  {
+    "country": "China",
+    "company": "AirFuture SA",
+    "sector": "Transport",
+    "emissions_mt": 85.35,
+    "year": 2022
+  },
+  {
+    "country": "Australia",
+    "company": "TexGlobal",
+    "sector": "Finance",
+    "emissions_mt": 53.99,
+    "year": 2021
+  },
+  {
+    "country": "Brazil",
+    "company": "EcoCorp",
+    "sector": "Automotive",
+    "emissions_mt": 67.35,
+    "year": 2021
+  },
+  {
+    "country": "France",
+    "company": "ByteEnergy",
+    "sector": "Textiles",
+    "emissions_mt": 94.44,
+    "year": 2022
+  },
+  {
+    "country": "UK",
+    "company": "EnviroFinance",
+    "sector": "Energy",
+    "emissions_mt": 23.93,
+    "year": 2022
+  },
+  {
+    "country": "USA",
+    "company": "PureAir Ltd.",
+    "sector": "Finance",
+    "emissions_mt": 11.36,
+    "year": 2022
+  },
+  {
+    "country": "Brazil",
+    "company": "EcoGrow",
+    "sector": "Transport",
+    "emissions_mt": 79.74,
+    "year": 2023
+  },
+  {
+    "country": "Germany",
+    "company": "EcoCorp",
+    "sector": "Steel Production",
+    "emissions_mt": 30.58,
+    "year": 2023
+  },
+  {
+    "country": "China",
+    "company": "PureAir Ltd.",
+    "sector": "Agriculture",
+    "emissions_mt": 99.09,
+    "year": 2022
+  },
+  {
+    "country": "Brazil",
+    "company": "Solaris Systems",
+    "sector": "Steel Production",
+    "emissions_mt": 89.67,
+    "year": 2022
+  },
+  {
+    "country": "Brazil",
+    "company": "UrbanMove",
+    "sector": "Textiles",
+    "emissions_mt": 73.83,
+    "year": 2023
+  },
+  {
+    "country": "Japan",
+    "company": "VoltTech",
+    "sector": "Aerospace",
+    "emissions_mt": 71.81,
+    "year": 2021
+  },
+  {
+    "country": "India",
+    "company": "SkyReach",
+    "sector": "Finance",
+    "emissions_mt": 80.97,
+    "year": 2021
+  },
+  {
+    "country": "Japan",
+    "company": "TexGlobal",
+    "sector": "Finance",
+    "emissions_mt": 7.61,
+    "year": 2022
+  },
+  {
+    "country": "Canada",
+    "company": "PureAir Ltd.",
+    "sector": "Aerospace",
+    "emissions_mt": 48.19,
+    "year": 2023
+  },
+  {
+    "country": "UK",
+    "company": "ByteEnergy",
+    "sector": "Aerospace",
+    "emissions_mt": 62.5,
+    "year": 2021
+  },
+  {
+    "country": "China",
+    "company": "AirFuture SA",
+    "sector": "Textiles",
+    "emissions_mt": 89.14,
+    "year": 2021
+  },
+  {
+    "country": "France",
+    "company": "PureAir Ltd.",
+    "sector": "Steel Production",
+    "emissions_mt": 94.28,
+    "year": 2023
+  },
+  {
+    "country": "China",
+    "company": "UrbanMove",
+    "sector": "Steel Production",
+    "emissions_mt": 84.24,
+    "year": 2023
+  },
+  {
+    "country": "Canada",
+    "company": "AgroNova",
+    "sector": "Aerospace",
+    "emissions_mt": 38.6,
+    "year": 2022
+  },
+  {
+    "country": "UK",
+    "company": "ByteEnergy",
+    "sector": "Transport",
+    "emissions_mt": 21.37,
+    "year": 2022
+  },
+  {
+    "country": "Australia",
+    "company": "Solaris Systems",
+    "sector": "Agriculture",
+    "emissions_mt": 88.0,
+    "year": 2021
+  },
+  {
+    "country": "Japan",
+    "company": "UrbanMove",
+    "sector": "Finance",
+    "emissions_mt": 7.6,
+    "year": 2023
+  },
+  {
+    "country": "Canada",
+    "company": "GreenPower Inc.",
+    "sector": "Finance",
+    "emissions_mt": 86.22,
+    "year": 2021
+  },
+  {
+    "country": "UK",
+    "company": "FutureFuel",
+    "sector": "Transport",
+    "emissions_mt": 22.73,
+    "year": 2023
+  },
+  {
+    "country": "China",
+    "company": "SteelDragon Ltd.",
+    "sector": "Textiles",
+    "emissions_mt": 37.64,
+    "year": 2022
+  },
+  {
+    "country": "USA",
+    "company": "HydroWave",
+    "sector": "Energy",
+    "emissions_mt": 7.43,
+    "year": 2022
+  },
+  {
+    "country": "Canada",
+    "company": "VoltTech",
+    "sector": "Aerospace",
+    "emissions_mt": 7.47,
+    "year": 2023
+  },
+  {
+    "country": "Australia",
+    "company": "EnviroFinance",
+    "sector": "Finance",
+    "emissions_mt": 73.23,
+    "year": 2023
+  },
+  {
+    "country": "Japan",
+    "company": "VoltTech",
+    "sector": "Steel Production",
+    "emissions_mt": 97.58,
+    "year": 2023
+  },
+  {
+    "country": "Brazil",
+    "company": "CyberDyn",
+    "sector": "Finance",
+    "emissions_mt": 81.69,
+    "year": 2023
+  },
+  {
+    "country": "China",
+    "company": "HydroWave",
+    "sector": "Agriculture",
+    "emissions_mt": 79.94,
+    "year": 2023
+  },
+  {
+    "country": "Germany",
+    "company": "UrbanMove",
+    "sector": "Energy",
+    "emissions_mt": 14.82,
+    "year": 2022
+  },
+  {
+    "country": "Japan",
+    "company": "GreenPower Inc.",
+    "sector": "Energy",
+    "emissions_mt": 99.32,
+    "year": 2022
+  },
+  {
+    "country": "USA",
+    "company": "HydroWave",
+    "sector": "Aerospace",
+    "emissions_mt": 79.13,
+    "year": 2021
+  },
+  {
+    "country": "Brazil",
+    "company": "UrbanMove",
+    "sector": "Finance",
+    "emissions_mt": 80.29,
+    "year": 2022
+  },
+  {
+    "country": "USA",
+    "company": "UrbanMove",
+    "sector": "Energy",
+    "emissions_mt": 75.09,
+    "year": 2021
+  },
+  {
+    "country": "France",
+    "company": "QuantumSteel",
+    "sector": "Technology",
+    "emissions_mt": 9.69,
+    "year": 2023
+  },
+  {
+    "country": "France",
+    "company": "HydroWave",
+    "sector": "Automotive",
+    "emissions_mt": 89.83,
+    "year": 2022
+  },
+  {
+    "country": "USA",
+    "company": "EcoGrow",
+    "sector": "Pharmaceuticals",
+    "emissions_mt": 21.53,
+    "year": 2023
+  },
+  {
+    "country": "USA",
+    "company": "VoltTech",
+    "sector": "Aerospace",
+    "emissions_mt": 72.98,
+    "year": 2023
+  }
+]
