@@ -1,36 +1,36 @@
 'use strict';
 
 //NAVBAR
-    document.addEventListener('click', function (event) {
-        const navbarToggler = document.querySelector('.navbar-toggler');
-        const navbarCollapse = document.querySelector('.navbar-collapse');
+document.addEventListener('click', function (event) {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
 
-        const isClickInsideNavbar = navbarCollapse.contains(event.target) || navbarToggler.contains(event.target);
+  const isClickInsideNavbar = navbarCollapse.contains(event.target) || navbarToggler.contains(event.target);
 
-        if (!isClickInsideNavbar && navbarCollapse.classList.contains('show')) {
-            navbarToggler.click(); 
-        }
-    });
+  if (!isClickInsideNavbar && navbarCollapse.classList.contains('show')) {
+    navbarToggler.click();
+  }
+});
 
 
 //BACK TO TOP BUTTON
 let back_btn = document.getElementById("back_btn");
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
- if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-  back_btn.style.display = "block";
- } else {
-  back_btn.style.display = "none";
- }
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    back_btn.style.display = "block";
+  } else {
+    back_btn.style.display = "none";
+  }
 }
 
 function topFunction() {
- window.scrollTo({
-  top: 0,
-  behavior: "smooth"
- });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
 
 //SWITCH DIRECTION
@@ -45,7 +45,7 @@ if (rtlLangs.some(code => userLang.startsWith(code))) {
   document.documentElement.setAttribute("lang", userLang);
 }
 
-  //SEARCH TABLE
+//SEARCH TABLE
   function filterfunction() {
     var input, filter, table, tr, td, i, j, txtValue, rowMatches;
     input = document.getElementById("filterInput");
@@ -69,7 +69,7 @@ if (rtlLangs.some(code => userLang.startsWith(code))) {
     }
   }
 
-    // FILTER TABLE
+// FILTER TABLE
 let sortDirection = {};
 
 function sortFunction(columnIndex) {
@@ -101,7 +101,6 @@ function sortFunction(columnIndex) {
 }
 
 
-
 //FORM VALIDATIOM FOR MAIL
 const regMail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -112,66 +111,66 @@ let errorMessageMail = [];
 
 inputMail.addEventListener("input", checkInputMail);
 document.forms[0].addEventListener("submit", function (e) {
-    e.preventDefault();
-    checkInputMail();
+  e.preventDefault();
+  checkInputMail();
 });
 
 
 function checkInputMail() {
-    let errorMail = [];
-    errorMessageMail.length = 0; 
+  let errorMail = [];
+  errorMessageMail.length = 0;
 
-    errorMail.push(checkEmpty(inputMail, errorMessageMail));
-    errorMail.push(checkMinMax(inputMail, 3, 100, errorMessageMail));
-    errorMail.push(checkMail(inputMail, errorMessageMail));
+  errorMail.push(checkEmpty(inputMail, errorMessageMail));
+  errorMail.push(checkMinMax(inputMail, 3, 100, errorMessageMail));
+  errorMail.push(checkMail(inputMail, errorMessageMail));
 
-    if (errorMail.includes(false)) {
-        inputMail.classList.add("error");
-        errorDivMail.textContent = errorMessageMail.join("");
-        inputMail.focus(); 
-    } else {
-        inputMail.classList.remove("error");
-        errorDivMail.textContent = "";
+  if (errorMail.includes(false)) {
+    inputMail.classList.add("error");
+    errorDivMail.textContent = errorMessageMail.join("");
+    inputMail.focus();
+  } else {
+    inputMail.classList.remove("error");
+    errorDivMail.textContent = "";
 
-        const safeEmail = escapeHTML(inputMail.value);
+    const safeEmail = escapeHTML(inputMail.value);
 
 
-        console.log("filtered input", safeEmail);
-    }
+    console.log("filtered input", safeEmail);
+  }
 }
 
 function checkEmpty(inp, arrayMessage) {
-    if (inp.value.trim() === "") {
-        arrayMessage[0] = "This is a required field\n";
-        return false;
-    } else {
-        arrayMessage[0] = "";
-        return true;
-    }
+  if (inp.value.trim() === "") {
+    arrayMessage[0] = "This is a required field\n";
+    return false;
+  } else {
+    arrayMessage[0] = "";
+    return true;
+  }
 }
 
 function checkMinMax(inp, min, max, arrayMessage) {
-    if (inp.value.length < min) {
-        arrayMessage[1] = `At least ${min} characters\n`;
-        return false;
-    } else if (inp.value.length > max) {
-        arrayMessage[2] = `Maximum ${max} characters\n`;
-        return false;
-    } else {
-        arrayMessage[1] = "";
-        arrayMessage[2] = "";
-        return true;
-    }
+  if (inp.value.length < min) {
+    arrayMessage[1] = `At least ${min} characters\n`;
+    return false;
+  } else if (inp.value.length > max) {
+    arrayMessage[2] = `Maximum ${max} characters\n`;
+    return false;
+  } else {
+    arrayMessage[1] = "";
+    arrayMessage[2] = "";
+    return true;
+  }
 }
 
 function checkMail(inp, arrayMessage) {
-    if (!regMail.test(inp.value)) {
-        arrayMessage[3] = "Format invalid\n";
-        return false;
-    } else {
-        arrayMessage[3] = "";
-        return true;
-    }
+  if (!regMail.test(inp.value)) {
+    arrayMessage[3] = "Format invalid\n";
+    return false;
+  } else {
+    arrayMessage[3] = "";
+    return true;
+  }
 }
 
 //ESCAPE FUNCTION

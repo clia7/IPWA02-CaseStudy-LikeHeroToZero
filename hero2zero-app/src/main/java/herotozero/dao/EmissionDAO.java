@@ -17,7 +17,8 @@ public class EmissionDAO {
             em.persist(emission);
             em.getTransaction().commit();
         } catch (Exception e) {
-            if (em.getTransaction().isActive()) em.getTransaction().rollback();
+            if (em.getTransaction().isActive())
+                em.getTransaction().rollback();
             throw e;
         } finally {
             em.close();
@@ -36,7 +37,7 @@ public class EmissionDAO {
     public List<Emission> findAll() {
         EntityManager em = emf.createEntityManager();
         try {
-            return em.createQuery("SELECT e FROM Emission e", Emission.class).getResultList();
+            return em.createQuery("SELECT e FROM Emission e ORDER BY e.year DESC", Emission.class).getResultList();
         } finally {
             em.close();
         }
@@ -49,7 +50,8 @@ public class EmissionDAO {
             em.merge(emission);
             em.getTransaction().commit();
         } catch (Exception e) {
-            if (em.getTransaction().isActive()) em.getTransaction().rollback();
+            if (em.getTransaction().isActive())
+                em.getTransaction().rollback();
             throw e;
         } finally {
             em.close();
@@ -66,7 +68,8 @@ public class EmissionDAO {
                 em.getTransaction().commit();
             }
         } catch (Exception e) {
-            if (em.getTransaction().isActive()) em.getTransaction().rollback();
+            if (em.getTransaction().isActive())
+                em.getTransaction().rollback();
             throw e;
         } finally {
             em.close();
