@@ -288,35 +288,6 @@
                     This overview serves as a starting point for identifying trends, making comparisons, and raising
                     awareness about the environmental impact of corporate activities worldwide.
                 </p>
-                <!--  <h:form id="filterForm">
-                    <h:inputText id="filterInput" styleClass="form-control mb-3" onkeyup="filterfunction()"
-                        pt:placeholder="Search by country or company..." pt:id="filterInput" />
-
-                    <div class="table-responsive-md">
-                        <table id="emissionTable" class="table table-striped table-hover">
-                            <thead>
-                                <tr>
-                                    <th onclick="sortFunction(0)">Country</th>
-                                    <th onclick="sortFunction(1)">Company</th>
-                                    <th onclick="sortFunction(2)">Sector</th>
-                                    <th onclick="sortFunction(3)">Emission in MT</th>
-                                    <th onclick="sortFunction(4)">Year</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <ui:repeat value="#{emissionBean.allEmissions}" var="emission">
-                                    <tr>
-                                        <td>#{emission.country}</td>
-                                        <td>#{emission.company}</td>
-                                        <td>#{emission.sector}</td>
-                                        <td>#{emission.emissionsMt}</td>
-                                        <td>#{emission.year}</td>
-                                    </tr>
-                                </ui:repeat>
-                            </tbody>
-                        </table>
-                    </div>
-                </h:form>-->
             </div>
         </section>
 
@@ -353,6 +324,11 @@
                         <h:outputText value="Emissionen (Mt)" />
                     </f:facet>
                     #{emission.emissionsMt}
+                    <f:facet name="footer">
+                        <h:outputText value="Sum: #{emissionBean.totalEmissions}">
+                            <f:convertNumber type="number" maxFractionDigits="2" groupingUsed="true" />
+                        </h:outputText> Mt
+                    </f:facet>
                 </h:column>
 
                 <h:column>
@@ -363,7 +339,6 @@
                 </h:column>
 
             </h:dataTable>
-
         </h:form>
 
 

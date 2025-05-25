@@ -29,7 +29,7 @@ public class LoginBean implements Serializable {
         } else {
             jakarta.faces.context.FacesContext.getCurrentInstance().addMessage(null,
                     new jakarta.faces.application.FacesMessage(jakarta.faces.application.FacesMessage.SEVERITY_ERROR,
-                            "Login fehlgeschlagen", "Benutzername oder Passwort ist falsch."));
+                            "Login failed", "Username or Password wrong"));
             return null; 
         }
     }

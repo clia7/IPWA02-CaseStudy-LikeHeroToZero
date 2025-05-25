@@ -51,7 +51,7 @@ public class EmissionResource {
         existing.setCountry(updatedEmission.getCountry());
         existing.setCompany(updatedEmission.getCompany());
         existing.setSector(updatedEmission.getSector());
-        existing.setEmissionsMt(updatedEmission.getEmissionsMt());  // angepasst
+        existing.setEmissionsMt(updatedEmission.getEmissionsMt());  
         existing.setYear(updatedEmission.getYear());
 
         dao.update(existing);

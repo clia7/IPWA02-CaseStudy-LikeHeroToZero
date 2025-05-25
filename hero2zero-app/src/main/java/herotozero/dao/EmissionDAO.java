@@ -37,17 +37,15 @@ public class EmissionDAO {
     public List<Emission> findLatestByCountry(String country) {
         EntityManager em = emf.createEntityManager();
         try {
-            // Ermittle das maximale Jahr für das gewählte Land
             Integer latestYear = em.createQuery(
                     "SELECT MAX(e.year) FROM Emission e WHERE e.country = :country", Integer.class)
                     .setParameter("country", country)
                     .getSingleResult();
 
             if (latestYear == null) {
-                return List.of(); // keine Daten vorhanden
+                return List.of(); 
             }
 
-            // Hole alle Einträge mit diesem Jahr
             return em.createQuery(
                     "SELECT e FROM Emission e WHERE e.country = :country AND e.year = :year", Emission.class)
                     .setParameter("country", country)
