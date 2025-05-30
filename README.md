@@ -22,16 +22,15 @@ The application was developed as part of the module "IPWA02 – Programming Indu
 
 ## Project Structure
 
-hero2zero-app/
-├── src/
-│   └── main/
-│       ├── java/
-│       │   ├── beans/        # Managed Beans
-│       │   └── model/        # JPA Entities
-│       └── webapp/
-│           ├── pages/        # JSF Views
-│           └── WEB-INF/      # Configuration files
-└── pom.xml                   # Maven build file
+## Project Structure
+
+The most relevant project folders and files:
+
+- `src/main/java/beans/` – JSF Managed Beans  
+- `src/main/java/model/` – JPA Entity Classes  
+- `src/main/webapp/pages/` – JSF Views (.xhtml)  
+- `src/main/webapp/WEB-INF/` – Configuration files (e.g. `web.xml`)  
+- `pom.xml` – Maven build configuration
 
 ## How to Run
 
