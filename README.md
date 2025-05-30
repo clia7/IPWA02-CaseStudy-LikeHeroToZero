@@ -40,7 +40,7 @@ The most relevant project folders and files:
 2. Create MySQL database  
    CREATE DATABASE hero2zero_db;
 
-3. Configure database connection in context.xml
+3. Configure database connection in persistence.xml
 
 4. Deploy the .war file to Apache Tomcat
 
