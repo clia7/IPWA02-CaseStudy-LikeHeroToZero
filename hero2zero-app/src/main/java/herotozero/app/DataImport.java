@@ -10,13 +10,12 @@ import java.util.List;
 import java.util.Map;
 
 public class DataImport {
-
     public static void main(String[] args) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
 
         InputStream is = DataImport.class.getResourceAsStream("/co2_emissions_data.json");
         if (is == null) {
-            System.err.println("JSON Datei nicht gefunden! Pfad prüfen!");
+            System.err.println("JSON File not found!");
             return;
         }
 
@@ -27,7 +26,7 @@ public class DataImport {
 
        for (Map<String, Object> entry : entries) {
             try {
-        System.out.println("Verarbeite: " + entry);
+        System.out.println("in progress: " + entry);
 
         int year = Integer.parseInt(entry.get("year").toString());
         String country = (String) entry.get("country");
@@ -36,7 +35,7 @@ public class DataImport {
 
         Object emissionsRaw = entry.get("emissions_mt");
         if (emissionsRaw == null) {
-            System.err.println("Kein emissions_mt vorhanden: " + entry);
+            System.err.println("No emissions_mt: " + entry);
             continue;
         }
 
