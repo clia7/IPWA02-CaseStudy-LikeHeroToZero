@@ -1,6 +1,6 @@
 # Like Hero To Zero  
 Case Study – IPWA02  
-Advanced JavaEE Web Application for CO₂ Data Management
+JavaEE Web Application for CO₂ Data Management
 
 ## Based on Previous Module  
 This project is a continuation of the [CO₂ Footprint project (IPWA01)](https://github.com/clia7/IPWA01-CasyStudy-CO2-Footprint), which provided a basic frontend for visualizing CO₂ emissions. The current case study enhances it with a full backend, login system, and persistent data handling using JavaEE technologies.
@@ -22,16 +22,15 @@ The application was developed as part of the module "IPWA02 – Programming Indu
 
 ## Project Structure
 
-hero2zero-app/
-├── src/
-│   └── main/
-│       ├── java/
-│       │   ├── beans/        # Managed Beans
-│       │   └── model/        # JPA Entities
-│       └── webapp/
-│           ├── pages/        # JSF Views
-│           └── WEB-INF/      # Configuration files
-└── pom.xml                   # Maven build file
+## Project Structure
+
+The most relevant project folders and files:
+
+- `src/main/java/beans/` – JSF Managed Beans  
+- `src/main/java/model/` – JPA Entity Classes  
+- `src/main/webapp/pages/` – JSF Views (.xhtml)  
+- `src/main/webapp/WEB-INF/` – Configuration files (e.g. `web.xml`)  
+- `pom.xml` – Maven build configuration
 
 ## How to Run
 
@@ -41,7 +40,7 @@ hero2zero-app/
 2. Create MySQL database  
    CREATE DATABASE hero2zero_db;
 
-3. Configure database connection in context.xml
+3. Configure database connection in persistence.xml
 
 4. Deploy the .war file to Apache Tomcat
 
