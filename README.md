@@ -1,6 +1,6 @@
 # Like Hero To Zero  
 Case Study – IPWA02  
-Advanced JavaEE Web Application for CO₂ Data Management
+JavaEE Web Application for CO₂ Data Management
 
 ## Based on Previous Module  
 This project is a continuation of the [CO₂ Footprint project (IPWA01)](https://github.com/clia7/IPWA01-CasyStudy-CO2-Footprint), which provided a basic frontend for visualizing CO₂ emissions. The current case study enhances it with a full backend, login system, and persistent data handling using JavaEE technologies.
