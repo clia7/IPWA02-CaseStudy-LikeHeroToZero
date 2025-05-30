@@ -61,18 +61,18 @@ public class EmissionBean implements Serializable {
             if (latestCountryEmissions == null) {
                 System.out.println("DAO liefert null zurück!");
             } else if (latestCountryEmissions.isEmpty()) {
-                System.out.println("Keine Emissionen für Land " + selectedCountry + " gefunden.");
+                System.out.println("no emissionen for country " + selectedCountry + " found.");
             } else {
                 System.out.println(
-                        "Emissionen geladen für Land " + selectedCountry + ": " + latestCountryEmissions.size());
+                        "emissionen load for country " + selectedCountry + ": " + latestCountryEmissions.size());
                 for (Emission e : latestCountryEmissions) {
-                    System.out.println("Firma: " + e.getCompany() + ", Jahr: " + e.getYear() + ", Emissionen: "
+                    System.out.println("company: " + e.getCompany() + ", year: " + e.getYear() + ", emissionen: "
                             + e.getEmissionsMt());
                 }
             }
         } else {
             latestCountryEmissions = null;
-            System.out.println("Kein Land ausgewählt.");
+            System.out.println("no country selected");
         }
     }
 
@@ -80,13 +80,13 @@ public class EmissionBean implements Serializable {
         try {
             emissionDAO.save(emission);
             FacesContext.getCurrentInstance().addMessage(null,
-                    new FacesMessage(FacesMessage.SEVERITY_INFO, "Erfolg", "Emission erfolgreich gespeichert."));
+                    new FacesMessage(FacesMessage.SEVERITY_INFO, "success", "emission successfully saved"));
             emission = new Emission();
             saved = true;
         } catch (Exception e) {
             FacesContext.getCurrentInstance().addMessage(null,
-                    new FacesMessage(FacesMessage.SEVERITY_ERROR, "Fehler",
-                            "Fehler beim Speichern: " + e.getMessage()));
+                    new FacesMessage(FacesMessage.SEVERITY_ERROR, "failed",
+                            "error while saving: " + e.getMessage()));
             saved = false;
         }
         return null;
@@ -96,11 +96,11 @@ public class EmissionBean implements Serializable {
         try {
             emissionDAO.delete(id);
             FacesContext.getCurrentInstance().addMessage(null,
-                    new FacesMessage(FacesMessage.SEVERITY_INFO, "Gelöscht", "Emission wurde gelöscht."));
+                    new FacesMessage(FacesMessage.SEVERITY_INFO, "deleted", "emission deleted"));
         } catch (Exception e) {
             FacesContext.getCurrentInstance().addMessage(null,
-                    new FacesMessage(FacesMessage.SEVERITY_ERROR, "Fehler",
-                            "Löschen fehlgeschlagen: " + e.getMessage()));
+                    new FacesMessage(FacesMessage.SEVERITY_ERROR, "failed",
+                            "deleting failed: " + e.getMessage()));
         }
     }
 

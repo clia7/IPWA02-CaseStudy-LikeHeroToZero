@@ -34,7 +34,7 @@ public class EmissionResource {
     public Emission getEmissionById(@PathParam("id") Long id) {
         Emission emission = dao.findById(id);
         if (emission == null) {
-            throw new NotFoundException("Emission mit ID " + id + " nicht gefunden");
+            throw new NotFoundException("emission ID " + id + " not found");
         }
         return emission;
     }

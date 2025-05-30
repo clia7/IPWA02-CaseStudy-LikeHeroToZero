@@ -15,13 +15,13 @@ public class DataImport {
 
         InputStream is = DataImport.class.getResourceAsStream("/co2_emissions_data.json");
         if (is == null) {
-            System.err.println("JSON File not found!");
+            System.err.println("JSON file not found!");
             return;
         }
 
         List<Map<String, Object>> entries = mapper.readValue(is, new TypeReference<>() {
         });
-        System.out.println("Einträge in JSON-Datei: " + entries.size());
+        System.out.println("entries for this JSON-file: " + entries.size());
         EmissionDAO dao = new EmissionDAO();
 
        for (Map<String, Object> entry : entries) {
@@ -45,7 +45,7 @@ public class DataImport {
         dao.save(emission);
 
     } catch (Exception e) {
-        System.err.println("Fehler bei diesem Datensatz: " + entry);
+        System.err.println("error for this data set: " + entry);
         e.printStackTrace();
     }
 }

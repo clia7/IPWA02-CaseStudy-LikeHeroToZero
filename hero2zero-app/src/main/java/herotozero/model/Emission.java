@@ -11,24 +11,24 @@ public class Emission {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Land darf nicht leer sein")
+    @NotBlank(message = "country cannot be empty")
     @Column(nullable = false)
     private String country;
 
-    @NotBlank(message = "Firma darf nicht leer sein")
+    @NotBlank(message = "company cannot be empty")
     @Column(nullable = false)
     private String company;
 
-    @NotBlank(message = "Sektor darf nicht leer sein")
+    @NotBlank(message = "sector cannot be empty")
     @Column(nullable = false)
     private String sector;
 
     @Column(name = "emissions_mt", nullable = false)
-    @Positive(message = "Emissionen müssen positiv sein")
+    @Positive(message = "emissionen should be positiv")
     private double emissionsMt;
 
     @Column(nullable = false)
-    @Positive(message = "Jahr muss positiv sein")
+    @Positive(message = "year should be positiv")
     private int year;
 
     public Emission() {

@@ -20,6 +20,7 @@ public class LoginBean implements Serializable {
         users.put("user", "user123");
     }
 
+    
     public String login() {
         String expectedPassword = users.get(username);
 
@@ -63,3 +64,4 @@ public class LoginBean implements Serializable {
         return loggedIn;
     }
 }
+

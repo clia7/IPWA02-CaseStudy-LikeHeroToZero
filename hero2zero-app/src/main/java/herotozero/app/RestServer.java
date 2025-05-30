@@ -26,6 +26,7 @@ public class RestServer extends Application {
         return resources;
     }
 
+    
     @Override
     public Set<Object> getSingletons() {
         Set<Object> singletons = new HashSet<>();

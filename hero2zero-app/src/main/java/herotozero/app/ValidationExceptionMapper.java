@@ -25,6 +25,7 @@ public class ValidationExceptionMapper implements ExceptionMapper<ConstraintViol
             errors.put(propertyPath, message);
         }
 
+        
         return Response.status(Response.Status.BAD_REQUEST)
                        .entity(errors)
                        .type(MediaType.APPLICATION_JSON)
